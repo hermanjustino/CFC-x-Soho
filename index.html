@@ -3,14 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CFC x SoHo</title>
+    <title>CFCxSoHo Toronto 2024</title>
     <link rel="stylesheet" href="./styles/styles.css">
 </head>
 <body>
+    <nav class="navbar">
+        <button class="nav-button" onclick="scrollToSection('about')">About</button>
+        <button class="nav-button" onclick="scrollToSection('mentees')">Mentees</button>
+    </nav>
     <div class="svg-column">
         <img src="./assets/cfc.png" alt="PNG 1">
         <img src="./assets/3.png" alt="PNG 2">
         <img src="./assets/2.png" alt="PNG 3">
     </div>
+    <!-- Add sections for About and Mentees -->
+    <section id="about">
+        <h2>About</h2>
+        <p>Information about the event...</p>
+    </section>
+    <section id="mentees">
+        <h2>Mentees</h2>
+        <p>Information about the mentees...</p>
+    </section>
+    <script src="./scripts/scripts.js"></script>
 </body>
 </html>

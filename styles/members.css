@@ -1,5 +1,5 @@
 body {
-    background-color: #f0f0f0;
+    background-color: rgb(49, 49, 49);
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
@@ -13,45 +13,106 @@ body {
     text-align: center;
     width: 100%;
     max-width: 600px;
-    padding: 20px;
-    background-color: white;
+    padding: 10px;
+    background-color: rgb(50, 50, 50);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
 
 .logo {
-    width: 150px;
-    height: 150px; /* Ensure the image is square */
-    margin-bottom: 20px;
-    border-radius: 50%; /* Make the image circular */
+    width: 100%; /* Full width on mobile */
+    max-width: 600px; /* Max width on larger screens */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
     object-fit: cover;
 }
 
 .links-container {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
 .link {
-    display: block;
+    display: flex; /* Use Flexbox */
+    align-items: center; /* Center items vertically */
+    justify-content: center; 
     padding: 10px;
     margin: 10px 0;
-    background-color: #0073e6;
+    background-color: rgba(47, 47, 47, 0.532); /* Translucent background */
     color: white;
     text-decoration: none;
-    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.5); /* Light border */
+    border-radius: 10px;
     cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    height: 50px;
+}
+
+.link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.5);
+    transform: skewX(-25deg);
+    transition: left 0.5s ease-in-out;
+}
+
+.link:hover::before {
+    left: 125%;
 }
 
 .link:hover {
-    background-color: #005bb5;
+    background-color: rgba(22, 18, 13, 0.7); /* Slightly darker on hover */
 }
 
 .bio {
     display: none;
-    padding: 10px;
+    padding: 20px;
     margin: 10px 0;
-    background-color: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+    background-color: rgb(70, 70, 70);
     text-align: left;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 10.1);
+    border-radius: 10px;
+    color: #dedede; 
+}
+
+.bio h3 {
+    text-align: center; /* Center the headline */
+}
+
+.bio-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .8);
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.social-links a {
+    color: #d3d3d3; /* Light gray color */
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.social-links a:hover {
+    color: #ffffff; /* White color on hover */
+}
+
+.social-links img {
+    width: 24px; /* Adjust size as needed */
+    height: 24px; /* Adjust size as needed */
 }
