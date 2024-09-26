@@ -42,6 +42,7 @@ html {
     padding: 20px;
     margin: 0 auto; /* Center the column */
     gap: 50px;
+    min-height: 90vh;
 }
 
 section {
@@ -119,5 +120,6 @@ section {
         flex-direction: row; /* Change to row on desktop */
         justify-content: center; /* Center the items horizontally */
         max-width: 600px; /* Adjust as needed */
+        gap: 40px;
     }
 }

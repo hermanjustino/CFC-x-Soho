@@ -79,7 +79,7 @@ body {
     color: #dedede; 
 }
 
-.bio h3 {
+.bio h3, h4 {
     text-align: center; /* Center the headline */
 }
 

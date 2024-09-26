@@ -7,18 +7,19 @@ const artists = [
         largeImage: '../assets/dina_roudman.jpg',
         headline: 'Painting, Digital Art',
         detailDescription: 'Never letting rejection get in the way',
-        photo: './assets/dina_roudman.jpg', 
+        photo: './assets/dina_roudman.jpg',
         instagram: 'leafya_a',
     },
     {
         id: '2',
-        name: 'Angela Feng', 
+        name: 'Angela Feng',
         description: '',
         largeImage: '../assets/alanka_krajewski.jpg',
         headline: 'Writer/Filmmaker',
         detailDescription: 'Angela Feng is a Toronto-based writer and filmmaker currently working as a script editor and freelance screenwriter. Shes so tired right now, and unable to think of a fun fact about herself. Possibly that she falls in love with any man who can tread water for longer than 30 seconds? Its a problem.',
         photo: './assets/alanka_krajewski.jpg',
         instagram: 'angelafengg',
+        pronouns: 'She/Her',
     },
     {
         id: '3',
@@ -30,6 +31,7 @@ const artists = [
         photo: '../assets/toronto/angella.webp',
         linkedin: 'https://www.linkedin.com/in/angellafajardo/',
         instagram: 'angellaamri',
+        pronouns: 'She/Her',
     },
     {
         id: '4',
@@ -41,6 +43,7 @@ const artists = [
         photo: './assets/aly_jamal.jpg',
         linkedin: 'https://www.linkedin.com/in/antoinette-johnson-3b774825a/',
         instagram: 'antistyledit',
+        pronouns: 'They/She',
     },
     {
         id: '5',
@@ -62,6 +65,7 @@ const artists = [
         photo: './assets/ivan_dossa.jpg',
         instagram: 'artin613',
         linkedin: 'https://ca.linkedin.com/in/artin-avaznia-a4952a145',
+        pronouns: 'He/Him',
     },
     {
         id: '7',
@@ -93,6 +97,7 @@ const artists = [
         photo: './assets/erica_reid.jpg',
         linkedin: 'https://www.linkedin.com/in/hermanjustino/',
         instagram: 'hermanjustino',
+        pronouns: 'He/Him',
     },
     {
         id: '10',
@@ -104,6 +109,7 @@ const artists = [
         photo: './assets/xavier_king.jpg',
         linkedin: 'iamjadahope',
         instagram: 'Toronto',
+        pronouns: 'she/her',
     },
     {
         id: '11',
@@ -125,6 +131,7 @@ const artists = [
         photo: './assets/caos_moto.jpg',
         linkedin: 'https://www.linkedin.com/in/lamesha-ruddock-600082156?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
         instagram: 'blemmefataleproductions',
+        pronouns: 'she/her',
     },
     {
         id: '13',
@@ -155,6 +162,7 @@ const artists = [
         detailDescription: '“How does a human take a thought and turn it into matter?” ',
         photo: './assets/kase_fenly.jpg',
         instagram: 'Hopkiiins',
+        pronouns: 'she/her',
     },
     {
         id: '16',
@@ -175,6 +183,7 @@ const artists = [
         detailDescription: 'Muhammad Mneina, known professionally as Saturn Blue, is a Libyan-Canadian singer, songwriter, and producer. Formerly performing under the name Kensho, he gained recognition in 2016 with his hit single "Breathe & Receive," which garnered millions of streams. After a seven-year hiatus, he returns with renewed focus and dedication to his craft as Saturn Blue.',
         photo: './assets/kase_fenly.jpg',
         instagram: 'muhammadmneina',
+        pronouns: 'He/Him',
     },
     {
         id: '18',
@@ -216,6 +225,7 @@ const artists = [
         photo: './assets/kase_fenly.jpg',
         linkedin: 'https://www.linkedin.com/in/simonmikre/',
         instagram: 'simonmikre',
+        pronouns: 'He/Him',
     },
     {
         id: '22',
@@ -237,6 +247,7 @@ const artists = [
         photo: './assets/kase_fenly.jpg',
         linkedin: 'https://toussaint.cargo.site',
         instagram: 'toussvint',
+        pronouns: 'She/They',
     },
     {
         id: '24',
@@ -281,6 +292,13 @@ function createLinksAndBios() {
             <img src="../assets/toronto/${artist.name}.webp" alt="${artist.name}" class="bio-image" loading="lazy">
             <p>${artist.detailDescription}</p>
         `;
+
+        // Conditionally add pronouns
+        if (artist.pronouns) {
+            const pronouns = document.createElement('h4');
+            pronouns.textContent = artist.pronouns;
+            bio.insertBefore(pronouns, bio.querySelector('img')); // Insert pronouns before the image
+        }
 
         // Create social links container
         const socialLinks = document.createElement('div');
