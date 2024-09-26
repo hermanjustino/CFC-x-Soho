@@ -61,6 +61,7 @@ const artists = [
         detailDescription: 'As a solo dance artist, and creative director, Artin Avaznia is revolutionizing the way dance is perceived and consumed. As dance is most often relegated to the shadows, Artin has been advocating and leading a career that is proving dancers can be headliners and main acts in their own right. Artin became the first solo dance artist in history to perform Fierte Montreal, Pride Toronto, and Ottawas Westfest. Additionally with the support of Red Bull Canada, HVO Vodka, and Sapsuckers, Artin sold-out his first headlining show. Artin has been featured on CTVs Etalk, BlogTO, CTV News, CityNews, CBC Radio.',
         photo: './assets/ivan_dossa.jpg',
         instagram: 'artin613',
+        linkedin: 'https://ca.linkedin.com/in/artin-avaznia-a4952a145',
     },
     {
         id: '7',
