@@ -1,0 +1,76 @@
+body {
+    background-color: black;
+    color: white; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.svg-column {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 60px;
+}
+
+.svg-column img {
+    max-width: 350px; 
+    max-height: 350px; 
+    width: auto;
+    height: auto;
+}
+
+.svg-column img:nth-child(1) {
+    animation: slide-down 2s ease-out;
+}
+
+.svg-column img:nth-child(2) {
+    max-width: 30px; 
+    max-height: 30px; 
+    animation: slide-in-left 2s ease-out;
+}
+
+.svg-column img:nth-child(3) {
+    animation: fade-in-flip 2s ease-out;
+}
+
+@keyframes slide-down {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in-left {
+    from {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fade-in-flip {
+    from {
+        transform: rotateY(0deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotateY(360deg);
+        opacity: 1;
+    }
+}
+
+@media (max-width: 768px) {
+    .svg-column {
+        flex-direction: column;
+    }
+}
