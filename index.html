@@ -23,8 +23,14 @@
     </section>
     <section id="mentees">
         <h2>Mentees</h2>
-        <p>Information about the mentees...</p>
+        <div class="gallery" id="gallery"></div>
     </section>
     <script src="./scripts/scripts.js"></script>
+    <script src="./scripts/gallery.js"></script>
+    <script>
+        function scrollToSection(sectionId) {
+            document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
