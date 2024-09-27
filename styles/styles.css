@@ -35,15 +35,56 @@ html {
     text-decoration: underline; /* Add underline on hover */
 }
 
+.image-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-height: 150px;
+}
+
+.main-image {
+    width: 100%; /* Default width for mobile */
+    max-width: 100%; /* Ensure the image does not exceed the container size */
+    height: auto; /* Maintain aspect ratio */
+}
+
+details {
+    margin-top: 10px;
+    padding: 10px;
+    background-color: none;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 100%;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
+
+details[open] summary {
+    text-decoration: none;
+}
+
+details p {
+    margin: 10px 0 0;
+    padding: 10px 0; /* Add padding between the text */
+    line-height: 1.9;
+    
+}
+
 .svg-column {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center; /* Center content vertically */
-    padding: 20px;
     margin: 0 auto; /* Center the column */
     gap: 20px;
-    min-height: 100vh; /* Take up the whole viewport height */
+    min-height: 75vh; /* Take up the whole viewport height */
 }
 
 section {
@@ -56,8 +97,8 @@ section {
 }
 
 .svg-column img {
-    max-width: 350px; 
-    max-height: 350px; 
+    max-width: 330px; 
+    max-height: 330px; 
     width: auto;
     height: auto;
 }
@@ -69,7 +110,6 @@ section {
 .svg-column img:nth-child(2) {
     max-width: 30px; 
     max-height: 30px; 
-    animation: slide-in-left 2s ease-out;
 }
 
 .svg-column img:nth-child(3) {
@@ -87,17 +127,6 @@ section {
     }
 }
 
-@keyframes slide-in-left {
-    from {
-        transform: translateX(-100%);
-        opacity: 0;
-    }
-    to {
-        transform: translateX(0);
-        opacity: 1;
-    }
-}
-
 @keyframes fade-in-flip {
     from {
         transform: rotateY(0deg);
@@ -108,8 +137,6 @@ section {
         opacity: 1;
     }
 }
-
-/* Existing styles... */
 
 .gallery {
     display: grid;
@@ -137,7 +164,9 @@ section {
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
-    border-radius: 10px;
+    border-radius: 20px;
+    max-width: 100%; /* Ensure the image does not exceed the container size */
+    max-height: 100%; /* Ensure the image does not exceed the container size */
 }
 
 .gallery-item:hover img {
@@ -161,8 +190,97 @@ section {
     opacity: 1;
 }
 
+.artist-panel {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%; /* Default width for mobile */
+    height: 100%;
+    background-color: #ebebeb;
+    color: rgb(6, 6, 6);
+    overflow-y: auto;
+    transition: right 0.3s ease;
+    z-index: 1001;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0); 
+}
+
+.artist-panel-content {
+    padding: 20px;
+}
+
+.artist-panel.open {
+    right: 0;
+    box-shadow: -10px 0 30px rgba(0, 0, 0, 0.5);
+}
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+    color: black; /* Ensure the close button is visible */
+    background: none; /* Remove any background */
+    border: none;
+}
+
+.artist-panel img {
+    width: 100%; /* Make the image take the full width of the panel */
+    height: auto; /* Maintain aspect ratio */
+    max-height: 50vh; /* Maximum height is half the viewport height */
+    object-fit: contain; /* Maintain aspect ratio and fit within the container */
+    margin-top: 20px; /* Add some space above the image */
+}
+
+.artist-links {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.artist-links a {
+    color: black; /* Set text color to black */
+    text-decoration: none; /* Set background color to black */
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.artist-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease;
+}
+
+.artist-links a:hover img {
+    transform: scale(1.1);
+}
+
+.artist-panel-content h2,
+.artist-panel-content h3,
+.artist-panel-content h4 {
+    text-align: center;
+}
+
+.artist-panel-content p{
+    padding: 10px;
+    margin-top: 10px;
+}
+
 /* Media query for desktop */
 @media (min-width: 769px) {
+    .image-container {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .main-image {
+        max-width: 35%; /* Set max width to 60% on desktop */
+        justify-content: center; 
+    }
+
     .svg-column {
         flex-direction: row; /* Change to row on desktop */
         justify-content: center; /* Center the items horizontally */
@@ -176,6 +294,21 @@ section {
 
     .gallery-item {
         max-width: 200px; /* Max width for each gallery item */
+        border-radius: 20px;
+    }
+
+    .artist-panel {
+        width: 50%; /* Take up half the screen on desktop */
+    }
+
+    .details-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details-container details {
+        width: 90%; /* Set width to 80% of the screen */
     }
 }
 
@@ -193,5 +326,18 @@ section {
         width: 100%;
         max-width: 100%; /* Ensure the gallery item takes up the full width */
         padding-top: 100%; /* 1:1 Aspect Ratio */
+        border-radius: 20px;
+    }
+
+    .artist-panel {
+        width: 100%; /* Take up the whole screen on mobile */
+    }
+
+    .artist-panel img {
+        width: 100%; /* Make the image take the full width of the panel */
+        height: auto; /* Maintain aspect ratio */
+        max-height: 50vh;
+        object-fit: contain;
+        border-radius: 20px;
     }
 }

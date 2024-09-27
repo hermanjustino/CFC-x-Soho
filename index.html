@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CFCxSoHo Toronto 2024</title>
     <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./styles/timeline.css">
 </head>
 <body>
     <nav class="navbar">
         <button class="nav-button" onclick="scrollToSection('about')">About</button>
         <button class="nav-button" onclick="scrollToSection('mentees')">Mentees</button>
+        <button class="nav-button" onclick="scrollToSection('showcase')">Showcase</button>
     </nav>
+    <div class="image-container">
+        <img src="./assets/skyline.png" alt="Main Image" class="main-image">
+    </div>
     <div class="svg-column">
         <img src="./assets/cfc.png" alt="PNG 1">
         <img src="./assets/3.png" alt="PNG 2">
@@ -18,15 +23,122 @@
     </div>
     <!-- Add sections for About and Mentees -->
     <section id="about">
-        <h2>About</h2>
-        <p>Information about the event...</p>
+        <h1>About CFC x Soho House</h1>
+        <div class="details-container">
+            <details>
+                <summary>Creative Futures Collective</summary>
+                <p>Founded in 2019 by Jai Al-Attas & Markie Bryant, the mission of CFC is to unearth and empower the next generation of 
+                    creative leaders from disenfranchised & impacted communities. 
+                    <br>
+                    <a href="https://creativefuturescollective.com" target="_blank">creativefuturescollective.com</a>
+                </p>
+            </details>
+            <details>
+                <summary>Our Vision</summary>
+                <p>
+                    Soho Mentorships were set up in 2018 as a 16-week program that connects Soho House members with young people in their city. The purpose is to grow connections, 
+                    confidence and experience - providing a route for them to access their chosen creative field. Each mentee is given a Soho House membership to help grow their 
+                    network, and members who take part will receive training on how to deliver advice and coaching.
+                </p>
+            </details>
+        </div>
     </section>
     <section id="mentees">
         <h2>Mentees</h2>
         <div class="gallery" id="gallery"></div>
     </section>
+
+    <section class="intro" id="showcase">
+        <div class="container">
+          <h1>Toronto 2024 Showcase &darr;</h1>
+          <p>October 1st</a></p>
+        </div>
+      </section>
+      
+      <section class="timeline">
+        <ol>
+          <li>
+            <div class="item-inner">
+              <div class="time-wrapper">
+                <time>6:00 - 6:30 PM</time>
+              </div>
+              <div class="details">
+                <h3>Guest Arrival</h3>
+                <p></p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <div class="time-wrapper">
+                <time>6:30 - 6:35 PM</time>
+              </div>
+              <div class="details">
+                <h3>Welcome & Intro</h3>
+                <p> CFC + Soho Membership Managers
+                    Mentee-MC intro by CFC</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <div class="time-wrapper">
+                <time>7:25 - 7:35 PM</time>
+              </div>
+              <div class="details">
+                <h3>Mentor Panel</h3>
+                <p>CFC Host + 3 Pre-selected Mentors</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <div class="time-wrapper">
+                <time>8:35 - 8:40 PM</time>
+              </div>
+              <div class="details">
+                <h3>Closing Message</h3>
+                <p>Outro by CFC + Soho Membership Managers</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="item-inner">
+              <div class="time-wrapper">
+                <time>8:40 - 9:00 PM</time>
+              </div>
+              <div class="details">
+                <h3>Mixer</h3>
+                <p>Networking</p>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+    <!-- Sliding panel for artist details -->
+    <div id="artist-panel" class="artist-panel">
+        <div class="artist-panel-content">
+            <span class="close-btn" onclick="closePanel()">&times;</span>
+            <h2 id="artist-name"></h2>
+            <h3 id="artist-headline"></h3>
+            <h4 id="artist-pronouns"></h4>
+            <img id="artist-photo" src="" alt="Artist Photo">
+            <p id="artist-detailDescription"></p>
+            <div id="artist-links" class="artist-links">
+                <a id="artist-linkedin" href="" target="_blank">
+                    <img src="./assets/icons/1-dark.svg" alt="LinkedIn">
+                </a>
+                <a id="artist-instagram" href="" target="_blank">
+                    <img src="./assets//icons/2-dark.svg" alt="Instagram">
+                </a>
+            </div>
+        </div>
+    </div>
+
     <script src="./scripts/scripts.js"></script>
     <script src="./scripts/gallery.js"></script>
+    <script src="./scripts/timeline.js"></script>
     <script>
         function scrollToSection(sectionId) {
             document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });

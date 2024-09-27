@@ -15,7 +15,8 @@ const artists = [
         our existence. Continuously exploring the limitless possibilities of creative expression, her work seamlessly blends traditional and digital media, mirroring her journey through the intersection of analog and digital art forms.`,
         photo: './assets/dina_roudman.jpg',
         instagram: 'leafya_a',
-        linkedin: 'https://www.linkedin.com/in/alefiyahassonjee/'
+        linkedin: 'https://www.linkedin.com/in/alefiyahassonjee/',
+        pronouns: 'She/Her',
     },
     {
         id: '2',
@@ -208,7 +209,8 @@ const artists = [
 `,
         photo: './assets/kase_fenly.jpg',
         instagram: 'mamoundu',
-        linkedin: 'https://www.linkedin.com/in/mamoundu-mardis-chatwin-618199232/'
+        linkedin: 'https://www.linkedin.com/in/mamoundu-mardis-chatwin-618199232/',
+        pronouns: 'She/Her',
     },
     {
         id: '15',
