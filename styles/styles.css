@@ -314,6 +314,11 @@ section {
 
 /* Mobile styles */
 @media (max-width: 768px) {
+
+    .navbar {
+        justify-content: center; /* Center navbar elements */
+    }
+    
     .gallery {
         display: grid;
         grid-template-columns: 1fr; /* Single column layout for mobile */
