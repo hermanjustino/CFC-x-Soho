@@ -1,5 +1,5 @@
 function getPhotoUrl(artistName) {
-    return `../soho/assets/toronto/${artistName}.webp`;
+    return `./assets/toronto/${artistName}.webp`;
 }
 
 function createGallery() {
