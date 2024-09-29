@@ -361,7 +361,10 @@ Sunday."`,
         description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Community Organizer/Curator',
-        detailDescription: '“How does a human take a thought and turn it into matter?” ',
+        detailDescription: `Zayn is an experienced and uniquely skilled poet and spoken word artist. Hailing from a long lineage of storytellers and born into a history of orature, Zayn has been weaving magic with her voice on and off the stage for many lifetimes. With a gentle romance that leaves audiences more tender than before, Zayn unfolds the careful stories planted deep in her blood. Half poetic expose, half religious confession, Zayn blesses the stage and her audiences with each poem. With years of experience working to create opportunities and spaces for Black and Indigenous youth voices in the city, Zayn is intimately familiar with the many faces of love, loss, survival, and reunion in the city.
+Having spent years competing in the Canadian Slam Scene under a different name from a different life, Zayn has lived both as a Canadian Individual Poetry Slam Champion as well as an ArtworxTO Year of Public Art Grant Recipient. In her time and capacity holding both these titles, Zayn was responsible for creating and executing an all Black and Indigenous mentorship program for youth poets from marginalized communities  in Toronto. Under Zayn’s direction, the mentorship program went on to produce a feature film that screened in Regent Park for 4 weeks in 2021.
+Having lived more lives than she cares to admit, Zayn has learned what is most important to her and has dedicated her life and her work to the collective liberation of her people. With only her words, and the love for her people that bleeds out onto every stage, Zayn is a magical new voice in poetry and an unstoppable force to be reckoned with.
+`,
         photo: './assets/kase_fenly.jpg',
         instagram: 'yourubadboii',
     }

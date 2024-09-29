@@ -44,7 +44,7 @@ html {
 
 .main-image {
     width: 100%; /* Default width for mobile */
-    max-width: 100%; /* Ensure the image does not exceed the container size */
+    max-width: 450px;
     height: auto; /* Maintain aspect ratio */
 }
 
@@ -234,8 +234,7 @@ section {
 
 .artist-links {
     display: flex;
-    gap: 10px;
-    margin-top: 20px;
+    justify-content: space-around;
 }
 
 .artist-links a {
@@ -249,8 +248,10 @@ section {
 }
 
 .artist-links img {
-    width: 50px;
-    height: 50px;
+    width: 24px; /* Default width */
+    height: 24px; /* Default height */
+    max-width: 50px; /* Maximum width */
+    max-height: 50px; /* Maximum height */
     transition: transform 0.3s ease;
 }
 
@@ -277,7 +278,7 @@ section {
         width: 100%;
     }
     .main-image {
-        max-width: 35%; /* Set max width to 60% on desktop */
+        max-width: 450px; /* Set max width to 60% on desktop */
         justify-content: center; 
     }
 
@@ -318,7 +319,7 @@ section {
     .navbar {
         justify-content: center; /* Center navbar elements */
     }
-    
+
     .gallery {
         display: grid;
         grid-template-columns: 1fr; /* Single column layout for mobile */
@@ -343,6 +344,6 @@ section {
         height: auto; /* Maintain aspect ratio */
         max-height: 50vh;
         object-fit: contain;
-        border-radius: 20px;
+        border-radius: 5px;
     }
 }
