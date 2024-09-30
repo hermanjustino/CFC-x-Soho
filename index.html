@@ -309,22 +309,32 @@
       document.addEventListener('DOMContentLoaded', function() {
           let touchstartX = 0;
           let touchendX = 0;
+          let touchstartY = 0;
+          let touchendY = 0;
 
           const artistPanel = document.getElementById('artist-panel');
 
           function handleGesture() {
-              if (touchendX > touchstartX) {
-                  // Swipe right detected
-                  closePanel();
+              const horizontalSwipeDistance = touchendX - touchstartX;
+              const verticalSwipeDistance = touchendY - touchstartY;
+
+              if (Math.abs(horizontalSwipeDistance) > Math.abs(verticalSwipeDistance)) {
+                  // Horizontal swipe detected
+                  if (horizontalSwipeDistance < 0) {
+                      // Swipe left detected
+                      closePanel();
+                  }
               }
           }
 
           artistPanel.addEventListener('touchstart', function(event) {
               touchstartX = event.changedTouches[0].screenX;
+              touchstartY = event.changedTouches[0].screenY;
           }, false);
 
           artistPanel.addEventListener('touchend', function(event) {
               touchendX = event.changedTouches[0].screenX;
+              touchendY = event.changedTouches[0].screenY;
               handleGesture();
           }, false);
       });
