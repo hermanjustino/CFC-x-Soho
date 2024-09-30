@@ -103,7 +103,7 @@ section {
     height: auto;
 }
 
-.svg-column img:nth-child(1) {
+.svg-column img:nth-child(1), .svg-column img:nth-child(3) {
     animation: slide-down 2s ease-out;
 }
 
@@ -112,28 +112,13 @@ section {
     max-height: 30px; 
 }
 
-.svg-column img:nth-child(3) {
-    animation: fade-in-flip 2s ease-out;
-}
-
 @keyframes slide-down {
     from {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
         opacity: 0;
     }
     to {
         transform: translateY(0);
-        opacity: 1;
-    }
-}
-
-@keyframes fade-in-flip {
-    from {
-        transform: rotateY(0deg);
-        opacity: 0;
-    }
-    to {
-        transform: rotateY(360deg);
         opacity: 1;
     }
 }
