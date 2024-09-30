@@ -138,7 +138,13 @@ const artists = [
         id: '11',
         name: 'Kadija Osman',
         headline: 'Screenwriting/Writer',
-        detailDescription: 'From burning and selling CD’s for $5 to curating NYC events.',
+        detailDescription: `Kadija Osman is a writer with a Bachelor of Journalism degree from Toronto Metropolitan University, 
+        currently transitioning from print to screenwriting. Fascinated by the power of film, Kadija is developing two 
+        feature-length scripts, one of which was completed during the prestigious 16-week Soho House x CFC Mentorship Program. 
+        While pursuing screenwriting, Kadija continues to freelance for Letterboxd Journal, fueled by a passion for cinema.
+        <br><br>Driven by a deep desire to explore and tell compelling human stories, Kadija focuses on capturing the complexities 
+        of the human experience, infusing raw emotion and unique perspectives into every project. Dedicated to crafting narratives 
+        that resonate, Kadija aims to create stories that leave a lasting impact on audiences.`,
         instagram: 'kadija.osman',
     },
     {
