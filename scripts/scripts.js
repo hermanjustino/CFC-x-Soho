@@ -12,7 +12,9 @@ const artists = [
         personal exploration of self, existentialism, and contemporary societal values. 
         Through her creations, Alefiya crafts a nuanced dialogue inspired by the human 
         experience, inviting viewers to reflect on the profound questions that shape 
-        our existence. Continuously exploring the limitless possibilities of creative expression, her work seamlessly blends traditional and digital media, mirroring her journey through the intersection of analog and digital art forms.`,
+        our existence. Continuously exploring the limitless possibilities of creative 
+        expression, her work seamlessly blends traditional and digital media, mirroring 
+        her journey through the intersection of analog and digital art forms.`,
         photo: './assets/dina_roudman.jpg',
         instagram: 'leafya_a',
         linkedin: 'https://www.linkedin.com/in/alefiyahassonjee/',
@@ -21,7 +23,6 @@ const artists = [
     {
         id: '2',
         name: 'Angela Feng',
-        description: '',
         largeImage: '../assets/alanka_krajewski.jpg',
         headline: 'Writer/Filmmaker',
         detailDescription: `Angela Feng is a Toronto-based writer 
@@ -36,7 +37,6 @@ const artists = [
     {
         id: '3',
         name: 'Angella Fajardo',
-        description: 'One sentence description about Artist 2.',
         largeImage: '../assets/toronto/angella.webp',
         headline: 'Entrepreneur - event consultant',
         detailDescription: `Angella Fajardo is the Founder of Ella Events & Marketing, an agency 
@@ -55,7 +55,6 @@ const artists = [
     {
         id: '4',
         name: 'Antoinette Johnson',
-        description: 'One sentence description about Artist 2.',
         largeImage: '../assets/aly_jamal.jpg',
         headline: 'Wardrobe Stylist',
         detailDescription: `Antoinette Johnson is a 2x award-nominated fashion stylist & 
@@ -73,17 +72,17 @@ const artists = [
     {
         id: '5',
         name: 'Arlesque',
-        description: 'Elle Patterson wearing By Drakes.',
+        detailDescription: `Arlesque is an alternative artist whose sound is defined by melancholic inflections and introspective lyrics. By blending genres seamlessly, he creates rich, atmospheric soundscapes just as he imagines them.
+        His lyrics explore themes of romance, drawing inspiration from personal experiences and the nuances of life. Arlesque’s music captures the beauty of vulnerability and the complexity of human emotions.
+        <br><br>His debut single, “Everything You Do,” is out now on all major platforms!`,
         largeImage: '../assets/drakes.jpg',
         headline: 'Music/Writing',
-        detailDescription: 'What to expect in his next collection.',
         photo: './assets/drakes.jpg',
         instagram: 'arlesque',
     },
     {
         id: '6',
         name: 'Artin Avaznia',
-        description: '',
         largeImage: '../assets/ivan_dossa.jpg',
         headline: 'Dance/Entrepreneurship/ Video Editing & Producing',
         detailDescription: 'As a solo dance artist, and creative director, Artin Avaznia is revolutionizing the way dance is perceived and consumed. As dance is most often relegated to the shadows, Artin has been advocating and leading a career that is proving dancers can be headliners and main acts in their own right. Artin became the first solo dance artist in history to perform Fierte Montreal, Pride Toronto, and Ottawas Westfest. Additionally with the support of Red Bull Canada, HVO Vodka, and Sapsuckers, Artin sold-out his first headlining show. Artin has been featured on CTVs Etalk, BlogTO, CTV News, CityNews, CBC Radio.',
@@ -95,7 +94,6 @@ const artists = [
     {
         id: '7',
         name: 'Denis Wong',
-        description: '',
         largeImage: '../assets/dcrmilda.jpg',
         headline: 'Actor',
         detailDescription: 'Becoming the number one DJ in the Czech Republic.',
@@ -104,21 +102,30 @@ const artists = [
     },
     {
         id: '8',
-        name: 'Luswaattaa',
-        description: 'Youtuber, Upcycled Arist',
+        name: 'Faith Omorodion',
         largeImage: '../assets/justin_lah.jpeg',
         headline: 'Youtuber, Upcycled Arist',
-        detailDescription: 'Jordan 1’s into one of one’s.',
+        detailDescription: `My name is Faith Omorodion AKA Luswaattaa. I am a Nigerian Female multidisciplinary artist. 
+        I live in Toronto and I attend the Toronto Metropolitan University where I am studying to be an urban planner. 
+        I also run a food catering business and create content on social media; there’s a link to my profile where 
+        you we can connect further ! I am passionate about sustainability and advocacy; the art collection I am 
+        exhibiting today are a part of my story and were made with up cycled materials. I can’t wait to share this 
+        with you! Thank you for your support.`,
         photo: './assets/justin_lah.jpeg',
         instagram: 'luswaattaa',
     },
     {
         id: '9',
         name: 'Herman Justino',
-        description: '',
         largeImage: '../assets/erica_reid.jpg',
         headline: 'Founder/Tech Professional',
-        detailDescription: 'As a digital native with a passion for understanding technology\'s impact on society, Herman brings a unique perspective to our collective. With a background in full-stack development and a current pursuit of a master\'s degree in data science, Herman is dedicated to exploring the ethical implications of AI and the power of recommender algorithms. His entrepreneurial spirit and experience in both freelancing and founding a software development firm equip him to contribute innovative solutions to our creative endeavors. Notably, Herman developed the very website you\'re reading, showcasing his technical skills and commitment to crafting digital experiences.',
+        detailDescription: `As a digital native with a passion for understanding technology's 
+        impact on society, Herman brings a unique perspective to our collective. With a background 
+        in full-stack development and a current pursuit of a master's degree in data science, Herman 
+        is dedicated to exploring the ethical implications of AI and the power of recommender algorithms. 
+        His entrepreneurial spirit and experience in both freelancing and founding a software development 
+        firm equip him to contribute innovative solutions to our creative endeavors. 
+        <br><br>Notably, Herman developed the very website you're reading, showcasing his technical skills and commitment to crafting digital experiences.`,
         photo: './assets/erica_reid.jpg',
         linkedin: 'https://www.linkedin.com/in/hermanjustino/',
         instagram: 'hermanjustino',
@@ -127,7 +134,6 @@ const artists = [
     {
         id: '10',
         name: 'Jada-Hope Croasdale',
-        description: '',
         largeImage: '../assets/xavier_king.jpg',
         headline: 'Singer/Song Writer',
         detailDescription: `Born Jada Hope, she is an alternative R&B & Rap, 
@@ -138,7 +144,8 @@ const artists = [
         path. Pulling from her Caribbean roots, she is inspired by the different 
         melodies, songs and beats of genres like reggae and calypso; Jada Hope 
         authentically intrigues any audience with originality. With her latest 
-        single Boy From Sauga, a dark, melodic Rap, it tells a very honest story of deceit and love,that will definitly just be the beginning for this icon in the making !`,
+        single Boy From Sauga, a dark, melodic Rap, it tells a very honest story 
+        of deceit and love,that will definitly just be the beginning for this icon in the making !`,
         photo: './assets/xavier_king.jpg',
         linkedin: 'iamjadahope',
         instagram: 'Toronto',
@@ -147,7 +154,6 @@ const artists = [
     {
         id: '11',
         name: 'Kadija Osman',
-        description: '',
         largeImage: '../assets/dj_savage.jpg',
         headline: 'Screenwriting/Writer',
         detailDescription: 'From burning and selling CD’s for $5 to curating NYC events.',
@@ -157,7 +163,6 @@ const artists = [
     {
         id: '12',
         name: 'Lamesha Ruddock',
-        description: '',
         largeImage: '../assets/caos_moto.jpg',
         headline: 'Cultural Producer/Performance Artist',
         detailDescription: `Lamesha Ruddock, a cultural producer, stage manager, performance artist, 
@@ -177,7 +182,6 @@ const artists = [
     {
         id: '13',
         name: 'Libin Ahmed',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Headline for Artist 2',
         detailDescription: `Libin considers herself an “adjustable puzzle piece,” with a diverse 
@@ -186,7 +190,8 @@ const artists = [
         diverse communities to drive tangible social change.
         Holding a Social Service Work diploma and a Bachelor of Child and Youth Care from Humber College, Libin is 
         currently exploring the intersection of arts and social justice in her postgraduate studies in Professional 
-        Writing and Communications. Her professional journey includes creating arts programs, providing administrative support, writing grants, coordinating events, and advocating for marginalized populations.
+        Writing and Communications. Her professional journey includes creating arts programs, providing 
+        administrative support, writing grants, coordinating events, and advocating for marginalized populations.
         As a poet, author, and photographer, Libin is a two-time official selection at international 
         film festivals. She thrives on building meaningful connections that foster partnerships and spark 
         social change, reinforcing her belief in care-driven action`,
@@ -196,7 +201,6 @@ const artists = [
     {
         id: '14',
         name: 'Mamoundu Mardis-Chatwin',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Web Creator',
         detailDescription: `Mamoundu Mardis-Chatwin is an emerging 
@@ -215,7 +219,6 @@ const artists = [
     {
         id: '15',
         name: 'Michelle Hopkins',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Singer/Songwriter',
         detailDescription: `Michelle Hopkins writes emotive, introspective lyrics, exploring themes of love, loss, and personal growth. She creates R&B, Soul, Folk, and Afro-Pop inspired music, inspired by artists like Tems, Adele, and Ed Sheeran. 
@@ -235,17 +238,21 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '16',
         name: 'Momoh Kakulatombo-Misoi',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Communications Professional',
-        detailDescription: '“How does a human take a thought and turn it into matter?” ',
+        detailDescription: `Momoh (he/him) is an interdisciplinary Kenyan Sierra Leonean creative 
+        non-fiction writer and professional cook living and working within the Dish With One Spoon 
+        Wampum Belt Covenant territory Tkaronto. His creative writing practices draws inspiration 
+        from the nested set of relationships between the built environment and human life and the 
+        dimensions of understanding between them. Follow his creative studio projects at 
+        \nwww.njanejourney.com`,
         photo: './assets/kase_fenly.jpg',
         instagram: 'iso_grains_of_tiwai',
+        pronouns: 'He/Him',
     },
     {
         id: '17',
         name: 'Muhammad Mneina',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Singer/Songwriter',
         detailDescription: `Muhammad Mneina, known professionally as Saturn Blue, 
@@ -260,7 +267,6 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '18',
         name: 'Parmis Beyzaei',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Fashion Designer/Pattern Maker',
         detailDescription: `Parmis Beyzaei is a Toronto-based pattern-maker. 
@@ -274,7 +280,6 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '19',
         name: 'Sahil Kumar',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Editor, Creative Director',
         detailDescription: '“How does a human take a thought and turn it into matter?” ',
@@ -284,7 +289,6 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '20',
         name: 'Shyla Gray',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Singer/Songwriter',
         detailDescription: '“How does a human take a thought and turn it into matter?” ',
@@ -294,7 +298,6 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '21',
         name: 'Simon Mikre',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Talent Management, Event Planning, Gaming',
         detailDescription: `Simon is a music industry professional with experience 
@@ -313,7 +316,6 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
     {
         id: '22',
         name: 'Sunday Kelvin',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Musician/Artist/Singer',
         detailDescription: `Ssunday is a Neo Soul singer and visual artist from Toronto. He draws inspiration from his
@@ -328,7 +330,6 @@ Sunday."`,
     {
         id: '23',
         name: 'Tamara Toussaint',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Musician/Artist/Singer',
         detailDescription: `Meet Toussaint: a genre-defying singer/songwriter, 
@@ -348,22 +349,44 @@ Sunday."`,
     {
         id: '24',
         name: 'Veeda Tanwir',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Events Management, Visual Arts',
-        detailDescription: '“How does a human take a thought and turn it into matter?” ',
+        detailDescription: `Veeda is a Toronto based artist and illustrator. Her work explores her Central Asian 
+        heritage and the immigrant/refugee experience. She seeks inspiration from her roots, often combining 
+        elements from her ethnic background with western pop-culture. She does not limit herself when it 
+        comes to choice of artistic mediums, working with paint, textiles, pen, pencil and digital media. Her 
+        passion for social justice and arts and culture is strongly reflected in her work. Her work aims to 
+        encourage challenging conversations regarding culture and social issues.
+        In the last 5 years, Veeda has been an active participant in community initiatives involving youth, arts, 
+        and professional skill building programs. She has hosted and participated in multiple exhibits 
+        and has coordinated multiple youth programs across the city.
+`,
         photo: './assets/kase_fenly.jpg',
         instagram: 'veedazzzz',
     },
     {
         id: '25',
         name: 'Zaenab Ojoawo',
-        description: '',
         largeImage: '../assets/kase_fenly.jpg',
         headline: 'Community Organizer/Curator',
-        detailDescription: `Zayn is an experienced and uniquely skilled poet and spoken word artist. Hailing from a long lineage of storytellers and born into a history of orature, Zayn has been weaving magic with her voice on and off the stage for many lifetimes. With a gentle romance that leaves audiences more tender than before, Zayn unfolds the careful stories planted deep in her blood. Half poetic expose, half religious confession, Zayn blesses the stage and her audiences with each poem. With years of experience working to create opportunities and spaces for Black and Indigenous youth voices in the city, Zayn is intimately familiar with the many faces of love, loss, survival, and reunion in the city.
-Having spent years competing in the Canadian Slam Scene under a different name from a different life, Zayn has lived both as a Canadian Individual Poetry Slam Champion as well as an ArtworxTO Year of Public Art Grant Recipient. In her time and capacity holding both these titles, Zayn was responsible for creating and executing an all Black and Indigenous mentorship program for youth poets from marginalized communities  in Toronto. Under Zayn’s direction, the mentorship program went on to produce a feature film that screened in Regent Park for 4 weeks in 2021.
-Having lived more lives than she cares to admit, Zayn has learned what is most important to her and has dedicated her life and her work to the collective liberation of her people. With only her words, and the love for her people that bleeds out onto every stage, Zayn is a magical new voice in poetry and an unstoppable force to be reckoned with.
+        detailDescription: `Zayn is an experienced and uniquely skilled poet and spoken word artist. 
+        Hailing from a long lineage of storytellers and born into a history of orature, Zayn has been 
+        weaving magic with her voice on and off the stage for many lifetimes. With a gentle romance 
+        that leaves audiences more tender than before, Zayn unfolds the careful stories planted deep 
+        in her blood. Half poetic expose, half religious confession, Zayn blesses the stage and her 
+        audiences with each poem. With years of experience working to create opportunities and spaces 
+        for Black and Indigenous youth voices in the city, Zayn is intimately familiar with the many 
+        faces of love, loss, survival, and reunion in the city.
+        Having spent years competing in the Canadian Slam Scene under a different name from a different life, 
+        Zayn has lived both as a Canadian Individual Poetry Slam Champion as well as an ArtworxTO Year 
+        of Public Art Grant Recipient. In her time and capacity holding both these titles, Zayn was 
+        responsible for creating and executing an all Black and Indigenous mentorship program for 
+        youth poets from marginalized communities  in Toronto. Under Zayn’s direction, the mentorship 
+        program went on to produce a feature film that screened in Regent Park for 4 weeks in 2021.
+        Having lived more lives than she cares to admit, Zayn has learned what is most important 
+        to her and has dedicated her life and her work to the collective liberation of her people. 
+        With only her words, and the love for her people that bleeds out onto every stage, Zayn is a 
+        magical new voice in poetry and an unstoppable force to be reckoned with.
 `,
         photo: './assets/kase_fenly.jpg',
         instagram: 'yourubadboii',

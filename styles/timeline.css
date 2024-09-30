@@ -194,13 +194,13 @@ h1 {
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
-  position: fixed;
-  right: 0;
   bottom: 20px;
   display: flex;
   align-items: center;
+  justify-content: center; /* Center content horizontally */
+  width: 100%;
   padding: 5px;
-  background: rgba(255, 255, 255, 0.65);
+  color: var(--white);
 }
 
 .page-footer a {

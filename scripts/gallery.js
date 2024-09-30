@@ -25,32 +25,37 @@ function createGallery() {
 }
 
 document.addEventListener('DOMContentLoaded', createGallery);
-
 function openPanel(artist) {
-    document.getElementById('artist-name').textContent = artist.name;
-    document.getElementById('artist-headline').textContent = artist.headline || '';
-    document.getElementById('artist-pronouns').textContent = artist.pronouns || '';
-    document.getElementById('artist-photo').src = getPhotoUrl(artist.name);
-    document.getElementById('artist-detailDescription').textContent = artist.detailDescription;
+    const artistPanel = document.getElementById('artist-panel');
+    const artistName = document.getElementById('artist-name');
+    const artistHeadline = document.getElementById('artist-headline');
+    const artistPronouns = document.getElementById('artist-pronouns');
+    const artistPhoto = document.getElementById('artist-photo');
+    const artistDetailDescription = document.getElementById('artist-detailDescription');
+    const artistLinkedIn = document.getElementById('artist-linkedin');
+    const artistInstagram = document.getElementById('artist-instagram');
 
-    const linkedinLink = document.getElementById('artist-linkedin');
-    const instagramLink = document.getElementById('artist-instagram');
+    artistName.textContent = artist.name;
+    artistHeadline.textContent = artist.headline;
+    artistPronouns.textContent = artist.pronouns;
+    artistPhoto.src = getPhotoUrl(artist.name);
+    artistDetailDescription.innerHTML = artist.detailDescription;
 
     if (artist.linkedin) {
-        linkedinLink.href = artist.linkedin;
-        linkedinLink.style.display = 'inline-block';
+        artistLinkedIn.href = artist.linkedin;
+        artistLinkedIn.style.display = 'inline';
     } else {
-        linkedinLink.style.display = 'none';
+        artistLinkedIn.style.display = 'none';
     }
 
     if (artist.instagram) {
-        instagramLink.href = `https://www.instagram.com/${artist.instagram}`;
-        instagramLink.style.display = 'inline-block';
+        artistInstagram.href = `https://www.instagram.com/${artist.instagram}`;
+        artistInstagram.style.display = 'inline';
     } else {
-        instagramLink.style.display = 'none';
+        artistInstagram.style.display = 'none';
     }
 
-    document.getElementById('artist-panel').classList.add('open');
+    artistPanel.classList.add('open');
 }
 
 function closePanel() {
