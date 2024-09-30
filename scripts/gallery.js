@@ -34,6 +34,7 @@ function openPanel(artist) {
     const artistDetailDescription = document.getElementById('artist-detailDescription');
     const artistLinkedIn = document.getElementById('artist-linkedin');
     const artistInstagram = document.getElementById('artist-instagram');
+    const artistPersonal = document.getElementById('artist-personal');
 
     artistName.textContent = artist.name;
     artistHeadline.textContent = artist.headline;
@@ -46,6 +47,13 @@ function openPanel(artist) {
         artistLinkedIn.style.display = 'inline';
     } else {
         artistLinkedIn.style.display = 'none';
+    }
+
+    if (artist.personalSite) {
+        artistPersonal.href = artist.personalSite;
+        artistPersonal.style.display = 'inline';
+    } else {
+        artistPersonal.style.display = 'none';
     }
 
     if (artist.instagram) {

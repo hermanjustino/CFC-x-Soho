@@ -17,6 +17,7 @@ const artists = [
         instagram: 'leafya_a',
         linkedin: 'https://www.linkedin.com/in/alefiyahassonjee/',
         pronouns: 'She/Her',
+        personalSite: 'https://www.studioleafy.com',
     },
     {
         id: '2',
@@ -40,7 +41,8 @@ const artists = [
          & Proposals by Ella, celebrating life’s most precious moments. Previously, she 
          held a senior role in public relations, artist management in entertainmment and 
          literature, and beauty. Her interests lie at the intersections of storytelling, 
-         activism, big-picture ideation, and then, points A to Z execution. Angella pushes 
+         activism, big-picture ideation, and then, points A to Z execution. 
+         <br><br>Angella pushes 
          boundaries by harnessing curiosity and creativity  to accelerate positive change.`,
         linkedin: 'https://www.linkedin.com/in/angellafajardo/',
         instagram: 'angellaamri',
@@ -106,14 +108,18 @@ const artists = [
         name: 'Herman Justino',
         headline: 'Founder/Tech Professional',
         detailDescription: `As a digital native with a passion for understanding technology's 
-        impact on society, Herman brings a unique perspective to our collective. With a background 
-        in full-stack development and a current pursuit of a master's degree in data science, Herman 
-        is dedicated to exploring the ethical implications of AI and the power of recommender algorithms. 
-        His entrepreneurial spirit and experience in both freelancing and founding a software development 
-        firm equip him to contribute innovative solutions to our creative endeavors. 
-        <br><br>Notably, Herman developed the very website you're reading, showcasing his technical skills and commitment to crafting digital experiences.`,
+        impact on society, Herman brings a unique perspective to our collective. Born in Angola and a 
+        child of the diaspora, he has always seen technology as a great equalizer.
+        With a background in full-stack development and a current pursuit of a master's degree in data science, 
+        Herman is dedicated to exploring the ethical implications of AI and the potential of 
+        recommender algorithms to revolutionize industries. His entrepreneurial spirit and experience in 
+        both freelancing and founding a software development firm equip him to contribute innovative 
+        solutions to our creative endeavors. 
+        <br><br>Notably, Herman developed the very website you're reading, showcasing his technical skills and 
+        commitment to crafting digital experiences.`,
         linkedin: 'https://www.linkedin.com/in/hermanjustino/',
         instagram: 'hermanjustino',
+        personalSite: 'https://herman-porfolio.my.canva.site/main',
         pronouns: 'He/Him',
     },
     {
@@ -158,7 +164,8 @@ const artists = [
          West End and at the Royal Court Theatre and was Co-Executive Director of Boundless 
          Theatre in 2023. She was formerly a producer at Luminato Festival Toronto 2024; 
          General Manager at Shadowland Theatre; and is currently Development Coordinator at 
-         BAND Galley and an Access Support Worker for Arts Council England. Fun Fact when I 
+         BAND Galley and an Access Support Worker for Arts Council England. 
+         <br><br>Fun Fact when I 
          was in primary school I trialled for Chelsea Girls FC.`,
         linkedin: 'https://www.linkedin.com/in/lamesha-ruddock-600082156?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app',
         instagram: 'blemmefataleproductions',
@@ -317,7 +324,7 @@ Sunday."`,
         inviting listeners into emotional landscapes. Her music, beyond melodies, celebrates 
         individuality and empowers outcasts. With a vision to inspire self-expression, Toussaint's 
         world rejects conformity, championing uniqueness fearlessly.`,
-        linkedin: 'https://toussaint.cargo.site',
+        personalSite: 'https://toussaint.cargo.site',
         instagram: 'toussvint',
         pronouns: 'She/They',
     },
@@ -349,7 +356,7 @@ Sunday."`,
         audiences with each poem. With years of experience working to create opportunities and spaces 
         for Black and Indigenous youth voices in the city, Zayn is intimately familiar with the many 
         faces of love, loss, survival, and reunion in the city.
-        Having spent years competing in the Canadian Slam Scene under a different name from a different life, 
+        <br><br>Having spent years competing in the Canadian Slam Scene under a different name from a different life, 
         Zayn has lived both as a Canadian Individual Poetry Slam Champion as well as an ArtworxTO Year 
         of Public Art Grant Recipient. In her time and capacity holding both these titles, Zayn was 
         responsible for creating and executing an all Black and Indigenous mentorship program for 
@@ -404,6 +411,14 @@ function createLinksAndBios() {
             linkedinLink.target = '_blank';
             linkedinLink.innerHTML = '<img src="../assets/icons/1.svg" alt="LinkedIn">';
             socialLinks.appendChild(linkedinLink);
+        }
+
+        if (artist.personalSite) {
+            const personalSite = document.createElement('a');
+            personalSite.href = artist.personalSite;
+            personalSite.target = '_blank';
+            personalSite.innerHTML = '<img src="../assets/icons/4.svg" alt="Personal Website">';
+            socialLinks.appendChild(personalSite);
         }
 
         if (artist.instagram) {
