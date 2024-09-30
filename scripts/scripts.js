@@ -85,7 +85,8 @@ const artists = [
         id: '7',
         name: 'Denis Wong',
         headline: 'Actor',
-        detailDescription: 'Becoming the number one DJ in the Czech Republic.',
+        detailDescription: `Actor | Creative Collaborator. Member of the Creative Futures Collective @ Soho House. 
+        Passionate about storytelling and connecting through art. Exploring new horizons in film and theater`,
         instagram: 'deniswongg',
     },
     {
