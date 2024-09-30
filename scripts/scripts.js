@@ -247,7 +247,13 @@ Hopkins was awarded “Best New Solo Artist” at the Mississauga Music awards (
         id: '19',
         name: 'Sahil Kumar',
         headline: 'Editor, Creative Director',
-        detailDescription: '“How does a human take a thought and turn it into matter?” ',
+        detailDescription: `Sahil Kumar is a Video Director, Creative Director and Editor based in
+        Toronto, ON. Working mainly in the commercial and music industry -
+he directs, shoots and edit both music video and corporate content,
+as well as social media campaigns.
+Sahil’s main goal is to bring unique and impactful content through
+collaborating with like-minded creatives and companies and bringing
+their best creative ideas to life.`,
         instagram: 'sunsetsahil',
     },
     {

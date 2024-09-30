@@ -21,7 +21,6 @@ a {
 
 body {
   font: normal 16px/1.5 "Inter", sans-serif;
-  padding-bottom: 50px;
 }
 
 /* INTRO SECTION
@@ -194,13 +193,14 @@ h1 {
 /* FOOTER STYLES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .page-footer {
-  bottom: 20px;
+  bottom: 0;
   display: flex;
   align-items: center;
   justify-content: center; /* Center content horizontally */
   width: 100%;
-  padding: 5px;
+  padding: 20px;
   color: var(--white);
+  background-color: black;
 }
 
 .page-footer a {
