@@ -174,7 +174,7 @@ const artists = [
     {
         id: '13',
         name: 'Libin Ahmed',
-        headline: 'Headline for Artist 2',
+        headline: 'Community Builder/Artist',
         detailDescription: `Libin considers herself an “adjustable puzzle piece,” with a diverse 
         skill set shaped by various unique roles and experiences. Passionate about community engagement, s
         ocial justice, and the arts, she has over five years of experience working with non-profits and 
